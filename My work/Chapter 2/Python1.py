@@ -1,6 +1,6 @@
 #Exercise 1
-5           #nothing
-x = 5       #assigns a value to a variable "x"
+5           #integer
+x = 5       #assigns a value to a variable "x", przypisanie
 x + 1       #adds one to a variable "x"
 
 #Exercise 2

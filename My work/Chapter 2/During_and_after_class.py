@@ -447,5 +447,4 @@ def ex43():
     name = list(name)
     for letter in name:
         print(f"{letter} ({ord(letter)})")
-ex43()
             
