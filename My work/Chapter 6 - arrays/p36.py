@@ -1,0 +1,5 @@
+tup = (50,20,40,50,30,50)
+print(f"Tuple: {tup}")
+num = int(input("Enter a number from a tuple: "))
+print(f"Value: {num}")
+print(f"Number of occurences: {tup.count(num)}")
