@@ -4,12 +4,33 @@ def lenword(word):
         if n == " ":
             count+=1 
     return count
-word = "An apple a day keeps the doctor away"
+
 
 def orderedwordfl(word):
     array = []
     array = str(word).split()
     array.sort(key=len)
     array.reverse()
-    return array
+    arr =""
+    count = 0
+    for i in array:
+        count+=1
+        if count == len(array):
+            arr+=str(i)
+        else:
+            arr+=str(i)+","
+    return arr
 
+def orderedlistalph(word):
+    array=[]
+    array = str(word).split()
+    array.sort()
+    arr =""
+    count = 0
+    for i in array:
+        count+=1
+        if count == len(array):
+            arr+=str(i)
+        else:
+            arr+=str(i)+","
+    return arr
