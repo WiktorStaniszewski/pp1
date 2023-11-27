@@ -9,4 +9,3 @@ for i in tdarray[0]:
 print()
 for i in tdarray[1]:
     print(i, end=' ')
-    
