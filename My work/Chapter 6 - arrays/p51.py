@@ -10,7 +10,7 @@ for sa in arr:
             first = i
             count+=1
         
-        elif count == 4:
+        elif count == len(arr[count_arr]):
             last = i
             count = 0
         else: 
