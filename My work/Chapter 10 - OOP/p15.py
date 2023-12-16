@@ -1,8 +1,9 @@
 class TV:
-    def __init__(self, channel_no):
+    def __init__(self):
         self.is_on = False
-        self.channel = channel_no
+        self.channel = 'Not set yet'
         self.channel_list = []
+        self.current_channel = 'Not set yet'
         
     def turn_on(self):
         self.is_on = True
@@ -26,6 +27,7 @@ class TV:
             self.channel = self.channel_list.index(name)+1
             for i in self.channel_list:
                 if i == name:
+                    self.current_channel = i
                     return f"Current channel: {i}"
         
     def names(self, channel_list):
@@ -33,11 +35,11 @@ class TV:
         
     def show_status(self):
         if self.is_on:
-            return f"TV is on\nChannel: {self.channel}"
+            return f"TV is on\nChannel: {self.channel}\nChannel name: {self.current_channel}"
         else:
             return "TV is off"
 print(">")
-tv = TV(1)
+tv = TV()
 print(tv.show_status())
 tv.turn_on()
 print(">")
@@ -49,6 +51,7 @@ tv.set_all_channels("TVP1 TVP2 Polsat TVN Filmbox Discovery")
 print(tv.show_channel(0))
 print(tv.show_channel("Polsat"))
 print(">")
+tv.show_channel("Discovery")
 print(tv.show_status())
 tv.turn_off()
 print(">")
