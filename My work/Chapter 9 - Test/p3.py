@@ -5,7 +5,7 @@ def f(cards):
             sum1 += 10
         else:
             sum1 += int(i)
-    return str(sum1)
+    return sum1
 
 
 
