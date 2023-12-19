@@ -1,6 +1,6 @@
 def f(t):
     import re
-    pattern = rf"\d+"
+    pattern = f"[0-9]+"
     x = re.findall(pattern, t)
     sum1 = 0
     for i in x:
