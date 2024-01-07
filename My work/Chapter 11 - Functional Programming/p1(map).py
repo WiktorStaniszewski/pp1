@@ -6,3 +6,11 @@ print(x)
 y = list(filter(lambda x:x%2==1, arr))
 print(y)
 import functools
+
+def between(a,b):
+    list1 = []
+    for i in range(a,b+1):
+        list(list1).append()
+    return list1
+
+between(1,4)
