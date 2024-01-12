@@ -1,11 +1,11 @@
 def f(addr):
     import re
-    words = rf"[a-zA-Z]+"
+    words = rf"\b[a-zA-Z]+"
     numbers = rf"[0-9]+"
     gwords = re.findall(words, addr)
     gnums = re.findall(numbers, addr)
     correct = 0
-    if len(gnums) == 0 or len(gwords) == 0 or len(gwords) > 2:
+    if len(gnums) == 0 or len(gwords) == 0:
         return False
     else:
         for i in gwords:
@@ -27,4 +27,4 @@ if __name__ == "__main__":
     print(f("4a"))
     print(f("bC123"))
     print(f("bcd555"))
-    print(f("s9915s"))
+    print(f("ss9915"))
